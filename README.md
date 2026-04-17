@@ -10,20 +10,18 @@
 Write a clear and engaging 2-4 sentence description here. Explain what your project does, who it's for, and why it’s useful.
 
 ## 🛠️ Technologies Used
-
-- **Frontend**: React, Next.js, Tailwind CSS
-- **Backend**: Node.js, Express / Python, FastAPI
-- **Database**: MongoDB / PostgreSQL
-- **AI/ML**: Grok API, OpenAI, TensorFlow (add or remove as needed)
-- **Other**: Docker, Vercel, GitHub Actions
+Technology	Purpose
+React.js/Next.js	Build the UI
+React Router DOM/App router(Next.js)	Handle page navigation
+Tailwind CSS+Any component library	Styling and responsiveness
 
 ## ✨ Key Features
 
 - **Feature 1**  
-  Short description of the first key feature.
+ 
 
 - **Feature 2**  
-  Short description of the second key feature.
+  
 
 - **Feature 3**  
-  Short description of the third key feature.
+  
