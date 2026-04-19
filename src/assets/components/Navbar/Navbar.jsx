@@ -1,5 +1,6 @@
 import React from "react";
-import { Home, Clock, TrendingUp } from "lucide-react";
+import { Home, Clock, TrendingUp, HomeIcon } from "lucide-react";
+import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
   return (
@@ -14,29 +15,15 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <div className="flex items-center gap-8">
-          <a
-            href="#"
-            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-700 text-white font-medium hover:bg-emerald-800 transition-colors"
-          >
-            <Home size={20} />
-            Home
-          </a>
-
-          <a
-            href="#"
-            className="flex items-center gap-2 px-4 py-2 text-gray-600 hover:text-gray-900 font-medium transition-colors"
-          >
-            <Clock size={20} />
-            Timeline
-          </a>
-
-          <a
-            href="#"
-            className="flex items-center gap-2 px-4 py-2 text-gray-600 hover:text-gray-900 font-medium transition-colors"
-          >
-            <TrendingUp size={20} />
-            Stats
-          </a>
+          <NavLink to="/" className={({isActive}) => isActive ? "flex gap-1 items-center text-green-500 border border-green-500 px-3 py-1 rounded" : "flex gap-1 items-center hover:text-green-500"}>
+            <HomeIcon size={20} />Home
+          </NavLink>
+          <NavLink to="/timeline" className={({isActive}) => isActive ? "flex gap-1 items-center text-green-500 border border-green-500 px-3 py-1 rounded" : "flex gap-1 items-center hover:text-green-500"}>
+            <Clock size={20} />Timeline
+          </NavLink>
+          <NavLink to="/stats" className={({isActive}) => isActive ? "flex gap-1 items-center text-green-500 border border-green-500 px-3 py-1 rounded" : "flex gap-1 items-center hover:text-green-500"}>
+            <TrendingUp size={20} />Stats
+          </NavLink>
         </div>
       </div>
     </nav>
